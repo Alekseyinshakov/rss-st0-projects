@@ -1,0 +1,86 @@
+.header{
+   padding: 30px 0;
+   padding-top: 22px;
+}
+
+.logo__title{
+   color: var(--color-dark-l);
+}
+
+.logo__subtitle{
+   color: var(--color-dark-3xl);
+}
+
+.nav{
+   color: var(--color-dark-l);
+}
+
+.burger__line{
+   background-color: #000;
+}
+
+.nav_item-active{
+   color: var(--color-dark-3xl);
+   -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav_item a:hover{
+   color: var(--color-dark-3xl);
+}
+
+.pets__cards{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   column-gap: 40px;
+   row-gap: 31px;
+}
+
+.pets__nav{
+   display: flex;
+   justify-content: center;
+   margin-top: 59px;
+   gap: 20px;
+}
+
+.inactive{
+   cursor: auto !important;
+   color: var(--color-dark-s) !important;
+   border: 2px solid var(--color-dark-s) !important;
+}
+
+.inactive:hover{
+   background: none !important;
+}
+
+.pets__nav button {
+   cursor: pointer;
+   border: 2px solid var(--color-primary);
+border-radius: 100px;
+width: 52px;
+height: 52px;
+background-color: inherit;
+
+font-family: var(--font-family);
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+text-align: center;
+color: var(--color-dark-3xl);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.pets__nav button:hover{
+   background: var(--color-primary);
+}
+
+.page_btn.active{
+   background: var(--color-primary);
+}

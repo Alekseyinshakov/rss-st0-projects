@@ -1,0 +1,133 @@
+body{
+   margin: 0;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: sans-serif;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom center;
+   transition: background-image 2s ease-in-out;
+   
+}
+button{
+   padding: 0;
+}
+
+.container {
+   display: flex;
+   flex-grow: 1;
+   padding-left: 20px;
+   padding-right: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo img{
+   height: 50px;
+   width: 50px;
+}
+
+.footer{
+   padding: 7px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgba(165, 165, 165, 0.703);
+   
+}
+
+.github{
+   color: black;
+}
+
+.player {
+   overflow: hidden;
+   flex-grow: 1;
+   max-width: 350px;
+   box-shadow: 0px 0px 32px -6px rgba(34, 60, 80, 0.37);
+   border-radius: 20px;
+   background: linear-gradient(90deg, rgba(255,190,8,1) 0%, rgba(245,255,0,1) 100%);
+   
+}
+
+.player-bottom{
+   padding: 18px 30px 38px;
+}
+
+.player__img-container {
+   height: 200px;
+}
+.player__img-container img {
+   width: 100%;
+}
+.controls {
+   display: flex;
+   justify-content: center;
+   column-gap: 15px;
+}
+
+.controls button{
+   transition: transform 0.1s;
+   &:active{
+      transform: scale(0.95)
+   }
+}
+
+.prew, .next, .play_pause {
+   background-color: transparent;
+   cursor: pointer;
+   border: none;
+}
+
+.prew img {
+   width: 30px;
+}
+
+.play_pause img {
+   width: 50px;
+}
+
+.next img{
+   width: 30px;
+}
+
+.group{
+   margin-top: 15px;
+   color: green;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.song-name {
+   margin-bottom: 10px;
+   min-height: 40px;
+}
+.vinil-container img{
+   width: 50px;
+   animation: rotate 1s linear infinite;
+   animation-play-state: paused;
+}
+
+.composition-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.bottom-row {
+   display: flex;
+   align-items: center;
+   column-gap: 7px
+}
+
+.progress {
+   flex-grow: 1;
+}
+
+@keyframes rotate {
+   from {
+     transform: rotate(360deg);
+   }
+ }

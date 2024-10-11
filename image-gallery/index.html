@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+    <div class="large">
+        <div class="large__inner">
+            <img class="large-img" src="https://ybis.ru/wp-content/uploads/2023/10/volk-v-nochi-1.webp" alt="larg-img">
+            <div class="large__close">
+                <img src="img/close.png" alt="close">
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="img/image.png" alt="logo">
+                    <div class="logo__text">Unsplash API</div>
+                </div>
+                <div class="night-mode">
+                    <label for="sw" class="switch">
+                        <input id="sw" type="checkbox" class="switch__input">
+                        <span class="switch-slider"></span>
+                    </label>
+                    <img class="night-mode__img" src="img/moon.png" alt="">
+                </div>
+
+                <div class="search-wrap">
+                    <input autocomplete="off" class="search-input" type="search" placeholder="Search..." />
+                    <img src="img/search.png" alt="" class="search-btn">
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </header>
+
+    <div class="pagination-row">
+        <div class="container">
+            <div class="notation">
+                *Click on the image to open it in maximum quality
+            </div>
+            <div class="pagination-row__inner">
+                <div class="pagination-row__item">
+                    <button class="get-random-btn">Show random</button>
+                </div>
+                <div class="pagination-row__item">
+                    <div class="pagination-arrows">
+                        <div class="prev-btn"><img src="img/prev-arrow.png" alt="prev"></div>
+                        <div class="next-btn"><img src="img/next-arrow.png" alt="next"></div>
+                    </div>
+                </div>
+                <div class="pagination-row__item">
+                    <div class="pagination">
+                        <label for="page">go to page(1 - <span class="last-page">20</span>):</label>
+                        <input autocomplete="off" id="page" class="input-page" type="text">
+                        <button class="go-to-page-btn">go!</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="main">
+        <div class="container">
+            <div class="main__inner">
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a class="github" href="https://github.com/Alekseyinshakov">
+            <img src="img/github-logo.png" alt="github">
+        </a>
+        <div class="year_create">2024</div>
+        <a href="https://rs.school/courses/javascript-preschool-ru" class="logo">
+            <img src="img/rss-logo-CM8B7fA7.svg" alt="">
+        </a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
